@@ -11,8 +11,10 @@
 		C00A8F962821D17800347A8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A8F952821D17800347A8C /* ContentView.swift */; };
 		C00A8F982821D17B00347A8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00A8F972821D17B00347A8C /* Assets.xcassets */; };
 		C00A8F9B2821D17B00347A8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00A8F9A2821D17B00347A8C /* Preview Assets.xcassets */; };
-		C00A8F9D2821D17B00347A8C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A8F9C2821D17B00347A8C /* Persistence.swift */; };
 		C00A8FA02821D17B00347A8C /* TrucksController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C00A8F9E2821D17B00347A8C /* TrucksController.xcdatamodeld */; };
+		C00A8FA72821D78800347A8C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A8FA62821D78800347A8C /* DataController.swift */; };
+		C00A8FA92821DA4900347A8C /* AddTruckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A8FA82821DA4900347A8C /* AddTruckView.swift */; };
+		C00A8FAB2822B7FD00347A8C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00A8FAA2822B7FD00347A8C /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +23,10 @@
 		C00A8F952821D17800347A8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C00A8F972821D17B00347A8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C00A8F9A2821D17B00347A8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C00A8F9C2821D17B00347A8C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C00A8F9F2821D17B00347A8C /* TrucksController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrucksController.xcdatamodel; sourceTree = "<group>"; };
+		C00A8FA62821D78800347A8C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C00A8FA82821DA4900347A8C /* AddTruckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTruckView.swift; sourceTree = "<group>"; };
+		C00A8FAA2822B7FD00347A8C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 			children = (
 				C00A8F932821D17800347A8C /* TrucksControllerApp.swift */,
 				C00A8F952821D17800347A8C /* ContentView.swift */,
+				C00A8FAA2822B7FD00347A8C /* DetailView.swift */,
 				C00A8F972821D17B00347A8C /* Assets.xcassets */,
-				C00A8F9C2821D17B00347A8C /* Persistence.swift */,
 				C00A8F9E2821D17B00347A8C /* TrucksController.xcdatamodeld */,
+				C00A8FA82821DA4900347A8C /* AddTruckView.swift */,
+				C00A8FA62821D78800347A8C /* DataController.swift */,
 				C00A8F992821D17B00347A8C /* Preview Content */,
 			);
 			path = TrucksController;
@@ -143,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00A8F9D2821D17B00347A8C /* Persistence.swift in Sources */,
+				C00A8FA72821D78800347A8C /* DataController.swift in Sources */,
+				C00A8FAB2822B7FD00347A8C /* DetailView.swift in Sources */,
+				C00A8FA92821DA4900347A8C /* AddTruckView.swift in Sources */,
 				C00A8FA02821D17B00347A8C /* TrucksController.xcdatamodeld in Sources */,
 				C00A8F962821D17800347A8C /* ContentView.swift in Sources */,
 				C00A8F942821D17800347A8C /* TrucksControllerApp.swift in Sources */,
