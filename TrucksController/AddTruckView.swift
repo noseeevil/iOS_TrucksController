@@ -18,10 +18,35 @@ struct AddTruckView: View {
     @State private var eco = "5"
     @State private var pallets = "22"
     @State private var fuel = "24.5"
+    @State private var img = UIImage(named: "daf_xf_105")
+    
+    @State private var image = UIImage()
+    @State private var showSheet = false
     
     var body: some View {
+        
+        
+        
         NavigationView {
             Form {
+                
+                Section {
+                    Button("Add photo") {
+                        showSheet = true
+                    }
+                }
+                
+                Section {
+                    Image(uiImage: image)
+                        .resizable()
+                        .frame(width: 250, height: 250)
+                        .clipShape(Circle())
+                        .overlay {
+                            Circle().stroke(.white, lineWidth: 4)
+                        }
+                        .shadow(radius: 7)
+                }
+                
                 Section {
                     TextField("Модель: ", text: $model)
                     TextField("Пробіг:", text: $mileage);
@@ -38,6 +63,8 @@ struct AddTruckView: View {
                 Section {
                     Button("Зберегти") {
                         
+                        let jpegImageData = image.jpegData(compressionQuality: 1.0)
+                        
                         let newTruck = Truck(context: moc)
                         newTruck.model = model
                         newTruck.mileage = mileage
@@ -45,6 +72,7 @@ struct AddTruckView: View {
                         newTruck.eco = eco
                         newTruck.pallets = pallets
                         newTruck.fuel = fuel
+                        newTruck.img = jpegImageData
                         
                         try? moc.save()
                         dismiss()
@@ -59,7 +87,15 @@ struct AddTruckView: View {
                 }
             }.navigationTitle("Нова машина")
         }
+        .sheet(isPresented: $showSheet) {
+            ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+        }
     }
+    
+    private func SaveImg() {
+        
+    }
+    
 }
 
 struct AddTruckView_Previews: PreviewProvider {

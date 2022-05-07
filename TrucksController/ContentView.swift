@@ -14,6 +14,7 @@ struct ContentView: View {
     @FetchRequest(sortDescriptors: []) var trucks: FetchedResults<Truck>
     
     @State private var showingAddScreen = false
+
     
     var body: some View {
         NavigationView {

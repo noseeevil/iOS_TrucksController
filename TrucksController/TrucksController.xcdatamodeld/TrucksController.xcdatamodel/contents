@@ -4,11 +4,12 @@
         <attribute name="age" optional="YES" attributeType="String"/>
         <attribute name="eco" optional="YES" attributeType="String"/>
         <attribute name="fuel" optional="YES" attributeType="String"/>
+        <attribute name="img" optional="YES" attributeType="Binary"/>
         <attribute name="mileage" optional="YES" attributeType="String"/>
         <attribute name="model" optional="YES" attributeType="String"/>
         <attribute name="pallets" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Truck" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Truck" positionX="-63" positionY="-18" width="128" height="134"/>
     </elements>
 </model>
